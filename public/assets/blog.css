@@ -1,0 +1,51 @@
+/* BLOG PAGE*/
+body{
+    margin-left: 40px;
+    padding: 25px;
+    text-align: right;
+    color: bisque;
+}
+div {
+    border-style: none;
+    margin: 20px;
+}
+#link {
+    color: wheat;
+    font-size: 25px;
+}
+
+.txt1 {
+    width: 1000px;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    float: left;
+}
+
+.swot {
+    width: 400px;
+    padding: 10px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    height: 150px;
+    margin-top: 235px;
+}
+
+.programming {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    height: 170px;
+    width: 420px;
+}
+
+h3 {
+    font-size: 30px;
+    color: wheat;
+}
+
+h2 {
+    color: wheat;
+    font-size: 25px;
+}
