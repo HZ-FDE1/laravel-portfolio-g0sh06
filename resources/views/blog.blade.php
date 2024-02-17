@@ -24,7 +24,7 @@
                     <h3 style="font-size: 32px">Study choice</h3>
                     <p style="font-size: 22px;">Study choice <br><br>
                         The IT field is always spreading with high speed.<br>
-                        There is a big list of jobs, which are wating to be fulfil with quality workers.<br>
+                        There is a big list of jobs, which are waiting to be fulfil with quality workers.<br>
                         After the big offering of working place as a reason to study ICT, then comes the work development(in meaning
                         salary
                         and better promoting chances). After all I believe that most of the people are working a job
@@ -34,22 +34,22 @@
                         money and the things,
                         that makes him happy. Also programming is one of my passions.When I am studying it, I think that i can
                         reveal my full potential,
-                        becase I can be fully concentrated into my study. I can spend time devemoping my programming skills knowing
+                        because I can be fully concentrated into my study. I can spend time developing my programming skills knowing
                         that every spent hour
                         will pay off at some point.<br>
                         After my graduation I will be focused on finding a job related to my university education. But for now this
                         is
                         several years in the future and can not predict how everything is going to go.
-                        <a href="/blog/posOne" style="font-size: 25px; text-align: right;">Read more...</a>
+                        <a href="/blog/posOne">Read more...</a>
                     </p>
                 </div>
 
-                <div class="swot">
+                <div class="swot" style="margin-left: 50px">
                     <h2>SWOT analysis</h2>
                     <a href="/blog/posTwo">Read more...</a>
                 </div>
 
-                <div class="programming">
+                <div class="programming" style="margin-right: 50px">
                     <h2>Programming Experience</h2>
                     <a href="/blog/posTwo">Read more...</a>
                 </div>

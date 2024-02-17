@@ -18,10 +18,8 @@
 {{-- Content --}}
 <section>
     <div>
-        <div class="columns">
-
+        <div>
             <div class="column is-8-desktop is-12-tablet">
-
                 <<table>
                     <tr>
                         <th>Information about me</th>

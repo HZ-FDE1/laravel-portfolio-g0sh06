@@ -18,8 +18,8 @@
 <section>
     <div>
         <div>
-            <div class="column is-8-desktop is-12-tablet">
-                <div class="faq" style="margin-left: 150px; color: wheat;">
+            <div>
+                <div class="faq" style="margin-left: 150px; color: wheat; text-align: left">
                     <h1 style="font-size: 56px;">Frequently asked questions:</h1>
                     <details>
                         <summary style="font-size: 30px;">How can you print a document from your laptop at HZ?</summary>

@@ -145,22 +145,21 @@
 
                     </tr>
                 </table>
-                <div class="progress">
-                    <label for="file">Carrer Study points</label>
-                    <progress id="file" value="32" max="60"> 32% </progress>
-                </div>
-                <h3 style="font-size: 30px; margin-right: 375px; color: wheat;">Total amount of credits: 60 EC</h3>
-
+            </div>
+            <h3 style="font-size: 30px; margin-right: 375px; color: wheat;">Total amount of credits: 60 EC</h3>
+            <div class="progress">
+                <label for="file">Carrer Study points</label>
+                <progress id="file" value="32" max="60"> 32% </progress>
             </div>
         </div>
     </div>
 </section>
 
-{{-- Footer --}}
-<x-nav.footer />
-
 {{-- Aside --}}
 <x-nav.aside />
+
+{{-- Footer --}}
+<x-nav.footer />
 
 </body>
 </html>

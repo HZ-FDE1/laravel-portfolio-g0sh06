@@ -8,21 +8,19 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     //
-    public static function index()
+    public static function index(Request $request)
     {
-        $param  = request('id');
-//        if(is_numeric($param)){
-//            return $param;
-//        }else{
-//            return 'false';
-//        }
-        if($param === 'posOne' || $param === 'posTwo') {
-            self::show($param);
-        }else {
-            return "Try again";
+    $param  = request('id');
+
+    if ($request->is('blog/*')) {
+        if ($param === 'posOne' || $param === 'posTwo') {
+            return self::show($param);
+        } else {
             $exception = new HttpClientException('Such indexed page does not exist');
             report($exception);
+            return "Try again"; // This line will now be reached
         }
+    }
     }
 
     public static function show($id)

@@ -5,14 +5,9 @@
         color: wheat;
     }
 </style>
-<footer>
-    <div class="container">
+<footer style="margin-top: 100px">
+    <div>
         <div>
-            <div>
-                <div>
-                    <a href="/" class="link" style="font-size: 16px; text-align: center;">Home</a>
-                </div>
-            </div>
 
             <div class="column has-text-centered">
                 <div>
