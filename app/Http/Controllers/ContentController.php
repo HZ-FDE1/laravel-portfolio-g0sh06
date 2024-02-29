@@ -14,6 +14,4 @@ class ContentController extends Controller
         // TODO: Implement __invoke() method.
         return view($id);
     }
-
-
 }

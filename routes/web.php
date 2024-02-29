@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,12 +16,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//getting every page
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+//getting the profile page
+Route::get('/profile', function () {
+    return view('components/layout/profile');
+})->name('profile');
+// getting the dashboard page
+Route::get('/dashboard', function () {
+    return view('components/layout/dashboard');
+})->name('dashboard');
 
-Route::get('/{id}', ContentController::class);
+Route::get('/faq', [FAQController::class, 'index'])->name('faq.index');
+Route::get('/faq/create', [FAQController::class, 'create'])->name('faq.create');
+Route::post('/faq', [FAQController::class, 'store'])->name('faq.store');
+Route::get('/faq/{faq}', [FAQController::class, 'show'])->name('faq.show');
 
-Route::get('/blog/{id}', [PostController::class, 'index']);
+Route::put('/faq/{faq}', [FAQController::class, 'update'])->name('faq.update');
+Route::get('faq/{faq}/edit', [FAQController::class, 'edit'])->name('faq.edit');
+
+Route::get('faq/{faq}/delete', [FAQController::class, 'delete'])->name('faq.delete');
+Route::delete('/faq/{faq}', [FAQController::class, 'destroy'])-> name('faq.destroy');
+
+
 
 
