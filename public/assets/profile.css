@@ -1,0 +1,16 @@
+/* PROFILE PAGE*/
+table,
+th,
+td {
+    border: 1px solid black;
+    margin-left: 200px;
+    color: wheat;
+    font-size: 25px;
+}
+#pictures {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
