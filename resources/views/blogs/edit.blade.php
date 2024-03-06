@@ -1,7 +1,8 @@
 <div class="box">
-    <form action="{{ route('faq.store') }}" method="POST">
+    <form action="{{ route('blog.update', $blog) }}" method="POST">
         @csrf
-        <h1 class="title is-4">Create a New FAQ</h1>
+        @method('PUT')
+        <h1 class="title is-4">Edit BLOG POST</h1>
         <br>
         <h2 class="subtitle is-6 is-italic">
             Please fill out all the form fields and click 'Submit'
@@ -11,9 +12,9 @@
         <div class="field">
             <label for="question" class="label">Question</label>
             <div class="control has-icons-right">
-                <input type="text" name="question" placeholder="Enter the question..."
+                <input type="text" name="question" placeholder="Enter the post's title..."
                        class="input @error('question') is-danger @enderror"
-                       value="{{ old('question') }}" autocomplete="question" autofocus>
+                       value="{{ $faq->question }}" autocomplete="question" autofocus>
                 @error('question')
                 <span class="icon has-text-danger is-small is-right">
                         <i class="fas fa-exclamation-triangle"></i>
@@ -28,9 +29,9 @@
         <div class="field">
             <label for="answer" class="label">Answer</label>
             <div class="control has-icons-right">
-                <input type="text" name="answer" placeholder="Enter an answer..."
+                <input type="text" name="answer" placeholder="Enter a summary of the post content..."
                        class="input @error('answer') is-danger @enderror"
-                       value="{{ old('answer') }}" autocomplete="answer">
+                       value="{{ $faq->answer }}" autocomplete="answer">
                 @error('answer')
                 <span class="icon has-text-danger is-small is-right">
                         <i class="fas fa-exclamation-triangle"></i>
@@ -45,9 +46,9 @@
         <div class="field">
             <label for="link" class="label">Link</label>
             <div class="control has-icons-right">
-                <input type="text" name="link" placeholder="Enter a link..."
+                <input type="text" name="link" placeholder="Enter the post's content here..."
                        class="input @error('link') is-danger @enderror"
-                       value="{{ old('link') }}" autocomplete="link">
+                       value="{{ $faq->link }}" autocomplete="link">
                 @error('link')
                 <span class="icon has-text-danger is-small is-right">
                         <i class="fas fa-exclamation-triangle"></i>
